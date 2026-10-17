@@ -1,0 +1,48 @@
+configuration {
+    font: "monospace 12";
+    show-icons: true;
+    icon-theme: "Mint-Y-Dark-Blue";
+    drun-display-format: "{name}";
+}
+
+* {
+    background-color: #1e1e2e;
+    text-color:       #cdd6f4;
+    border-color:     #89b4fa;
+    
+    /* Highlighted item */
+    selected-normal-background: #89b4fa;
+    selected-normal-foreground: #1e1e2e;
+    
+    /* Spacing */
+    spacing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    width: 40%;
+    border: 2;
+    border-radius: 8;
+    padding: 10;
+    location: center;
+}
+
+listview {
+    lines: 10;
+    columns: 1;
+    fixed-height: false;
+    border: 0;
+    scrollbar: false;
+}
+
+element {
+    padding: 6 10;
+    border-radius: 4;
+}
+
+element selected {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+}
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
